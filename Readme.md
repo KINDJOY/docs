@@ -1,27 +1,20 @@
-<h1 align='center'>Devhints</h1>
 
-<blockquote align='center'>
-TL;DR for developer documentation - a ridiculous collection of cheatsheets
-</blockquote>
+## 剧本
 
-<p align='center'>
-<a href='https://travis-ci.org/rstacruz/cheatsheets'><img src='https://travis-ci.org/rstacruz/cheatsheets.svg?branch=master' alt='See test builds'></a>
-<a href='https://github.com/rstacruz/cheatsheets/actions?query=workflow%3ADeploy'><img src='https://github.com/rstacruz/cheatsheets/workflows/Deploy/badge.svg' alt='GitHub pages deploy status'></a>
-<a href='https://app.netlify.com/sites/devhints-cheatsheets/deploys'><img src='https://api.netlify.com/api/v1/badges/c66b2a8b-5147-4243-9bf6-e2143126f6c8/deploy-status' alt='Netlify deploy status'></a>
-</p>
+* 我们的城堡被怪物占领了, 快来夺回城堡吧~
 
-<br>
+## 关卡
 
-<p align='center'>
-<a href='https://devhints.io/'><img src='_docs/images/screenshot.png' width=600></a>
-<br>
-✨ <b><a href='https://devhints.io/'>devhints.io</a></b> ✨
-</p>
+* 可以用激励视频召唤 AI(使用 TetrisEngine 的AI) 进行消除(有时间限制)
 
-<br>
+* 技能需要充能, 充能方式为消除与技能相同颜色的方块数量, 充能完成才能使用技能, 使用技能扣技能点数, 技能点数从消除的行数获取, 每行10点, 一次性消除多行增加额外分数但不增加额外点数, 点数与消除的方块数量相等
 
----
+* 怪物攻击方式为打砖块游戏玩法, 随机方向发射子弹,子弹碰到方块会消除该方块并反弹, 消除的方块数量从点数中扣除
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for developer notes.
+* 方块堆叠上限为 40+9 行, 最大数量: 50*9=450, 到达堆叠上限方块不再继续向下滑动直到消除到 40 行以下
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rstacruz/cheatsheets)
+* 方块的任何部分还在上半部分的 9 行内时, 方块可以上下左右移动, 移动后从当前位置继续下落, 否则(方块全部在下面的7行内)则只能左右移动不能上下移动
+
+* 游戏区域按列分成 3 个区,每 3 列一个区, 每个区对应一个怪物, 消除方块时, 按最后一个方块所在的区攻击对应的怪物, 攻击的点数即为消除的方块数量(比如消除一行, 那么每个方块攻击力为 10/4=2.5 点, 如果一个区内有3个方块,那么该怪物受到 2.5*3=7.5点攻击)
+
+* 怪物死亡后在没有怪物的区进行消除可以攻击到 BOSS, BOSS 死亡后该局胜利
