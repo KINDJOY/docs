@@ -3,7 +3,7 @@
   - [※ 《用户协议》](TermsOfUse/zh-cn.md) 
   
 - 文档
-  - [※ 安装说明](index.md)
-  - [※ Read Me](design.md)
+  - [※ Read Me](index.md)
+  - [※ 安装说明](install.md)
 
 
