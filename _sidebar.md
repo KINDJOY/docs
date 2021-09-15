@@ -4,6 +4,6 @@
   
 - 文档
   - [※ 安装说明](index.md)
-  - [※ Read Me](readme.md)
+  - [※ Read Me](design.md)
 
 
